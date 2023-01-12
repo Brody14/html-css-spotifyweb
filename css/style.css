@@ -42,6 +42,10 @@ body {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+}
+
 .space-btw {
     justify-content: space-between;
 }
@@ -83,32 +87,23 @@ body {
     display: flex;
 }
 
-/* .toolbar > * {
-    border: 2px solid white; 
-    height: 50px;   
-    width: 100px;
-} */
+/* SONG PLAYED */
 
-.toolbar__song-played {
-    display: flex;
+.song-played.row {
     padding: 0 10px;
     gap: 40px;
 }
 
-.song-played__thumb {
-    display: flex;
-}
-
-.song-played__thumb .thumb__album-cover {
+.thumb__album-cover {
     width: 43px;
     margin-right: 12px;
 }
 
-.thumb__song-name {
+.artist-name {
     font-size: 14px;
 }
 
-.thumb__song-name {
+.song-name {
     color: var(--gray);
     font-size: 12px;
 }
@@ -120,3 +115,5 @@ body {
 .song-played__options > .like {
     margin-right: 12px;
 }
+
+/* PLAYER */
