@@ -18,3 +18,50 @@ img {
     max-width: 100%;
     display: block;
 }
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* HEADER STYLE */
+
+.header-navbar {
+    background-color: #000000;
+    width: 230px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 552px) {
+    .header-navbar {
+        width: 50px;
+    }
+}
+
+/* MAIN STYLE */
+
+.scroll {
+    background-color: #131821;
+    flex-grow: 1;
+}
+
+
+/* TOOLBAR STYLE */
+
+.toolbar {
+    background-color: #282828;
+    height: 86px;
+    width: 100%;
+    flex-shrink: 0;
+}
