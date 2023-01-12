@@ -161,3 +161,23 @@ body {
     position: absolute;
     left: 36px;
 }
+
+/* OPTION */
+
+.toolbar__options {
+    flex-shrink: 0;
+}
+
+.toolbar__options .row {
+    gap: 16px;
+    position: relative;
+}
+
+.toolbar__options .progress-bar {
+    width: 125px;
+}
+
+.toolbar__options .progress-bar.playing {
+    width: 30px;
+    left: 101px;
+}
