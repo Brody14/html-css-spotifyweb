@@ -7,6 +7,7 @@
     --gray: #666666;
     --lime: #adff2f;
     --icon-gray: #d2d2d2;
+    --button-gray: #a3a3a3;
 }
 
 * {
@@ -72,11 +73,12 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    font-size: 11px;
 }
 
-.sidebar > * {
+/* .sidebar > * {
     border: 2px solid orange;
-}
+} */
 
 /* RESPONSIVE */
 
@@ -93,7 +95,7 @@ body {
 }
 
 .logo-lg {
-    width: 130px;
+    width: 120px;
 } 
 
 .logo-small {
@@ -119,28 +121,29 @@ body {
 /* SIDEBAR MENU */
 
 .menu {
-    padding: 10px 22px 0;
+    padding: 5px 22px;
 }
 
 .menu.row {
     flex-direction: column;
-    gap: 12px;
+    gap: 7px;
 }
 
 .menu__items {
     display: flex;
-    gap: 9px;
-    font-size: 14px;
+    gap: 5px;
 }
-
 
 .menu__items > a:not(.home) {
     color: var(--gray);
 }
 
+.menu__items > img:not(.home-img) {
+    filter: invert(0.5);
+}
+
 .menu__items > img {
     width: 20px;
-    filter: invert(0.5);
 }
 
 .menu__items.home {
@@ -159,7 +162,48 @@ body {
 
 /* PLAYLIST */
 
+.playlist {
+    padding: 10px 21px 0;
+}
 
+.playlist__title {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.button {
+    font-size: 13px;
+    line-height: 29px;
+}
+
+.wrapper_items,
+.button {
+    color: var(--gray);
+}
+
+
+.button > .plus {
+    color: var(--header-bg);
+    background-color: var(--button-gray);
+    padding: 0 7px;
+    margin-right: 8px;
+    line-height: 29px;
+    font-size: 30px;
+}
+
+.playlist-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 21px;
+}
+
+@media screen and (max-width: 551px) {
+    .playlist,
+    .playlist-wrapper {
+        display: none;
+    }
+}
 
 /* DOWNLOAD */
 
