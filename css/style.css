@@ -109,17 +109,14 @@ body {
     margin-right: 12px;
 }
 
-.thumb__info {
-    flex-shrink: 0;
-}
 
 .artist-name {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .song-name {
     color: var(--gray);
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .song-played__options {
@@ -129,6 +126,32 @@ body {
 
 .song-played__options > .like {
     margin-right: 12px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 877px) {
+
+    .song-played__options {
+        flex-shrink: 1;
+    }
+
+}
+
+@media screen and (max-width: 638px) {
+
+    .thumb__album-cover {
+        width: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 551px) {
+
+    .thumb__album-cover {
+        width: 30px;
+    }
+    
 }
 
 /* PLAYER */
@@ -185,7 +208,7 @@ body {
 
 }
 
-.volume-options {
+.volume_options {
     position: relative;
     display: contents;
 }
