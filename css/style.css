@@ -37,9 +37,7 @@ body {
 
 .main-content {
     flex-grow: 1;
-    width: 100%;
     display: flex;
-    margin: 0 auto;
 }
 
 .row {
@@ -79,6 +77,8 @@ body {
     background-color: #131821;
     flex-grow: 1;
 }
+
+/* barra fissa #080b12 */
 
 
 /* TOOLBAR STYLE */
@@ -127,6 +127,10 @@ body {
 
 /* PLAYER */
 
+.toolbar__player {
+    flex-basis: 40%;
+}
+
 .toolbar__player .row {
     gap: 16px;
 }
@@ -146,18 +150,21 @@ body {
     position: relative;
 }
 
-.progress-bar {
+.bar {
     height: 5px;
     background-color: #5a5a5a;
-    width: 430px;
     border-radius: 999px;
 }
 
+
+.progress-bar {
+    width: 100%
+}
+    
+
 .progress-bar.playing {
-    height: 5px;
     background-color: #c1c1c1;
-    width: 83px;
-    border-radius: 999px;
+    width: 20%;
     position: absolute;
     left: 36px;
 }
