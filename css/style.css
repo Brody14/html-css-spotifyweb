@@ -77,6 +77,37 @@ body {
     padding: 10px;
 }
 
+.logo {
+    padding: 20px;
+}
+
+.logo-lg {
+    width: 130px;
+} 
+
+.logo-small {
+    display: none;
+}
+
+@media screen and (max-width: 551px) {
+
+    .logo {
+        padding: 4px 10px;
+    }
+
+    .logo-lg {
+        display: none;
+    }
+
+    .logo-small {
+        display: inline-block;
+    }
+}
+
+.menu {
+    padding-left: 20px;
+}
+
 .download {
     margin-top: auto;
 }
