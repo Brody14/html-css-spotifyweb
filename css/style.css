@@ -1,6 +1,10 @@
 :root {
     --header-width: 230px;
+    --header-bg: #000000;
+    --mainview-bg: #131821;
+    --aside-bg: #282828;
     --gray: #666666;
+    --lime: #adff2f;
 }
 
 * {
@@ -59,15 +63,26 @@ body {
 
 /* HEADER STYLE */
 
-.main-header {
-    background-color: #000000;
+.sidebar {
+    background-color: var(--header-bg);
     width: var(--header-width);
     flex-shrink: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 552px) {
-    .main-header {
+.sidebar > * {
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+.download {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 551px) {
+    .sidebar {
         width: 50px;
     }
 }
@@ -75,7 +90,7 @@ body {
 /* MAIN-VIEW STYLE */
 
 .main-view {
-    background-color: #131821;
+    background-color: var(--mainview-bg);
     flex-grow: 1;
 }
 
@@ -85,7 +100,7 @@ body {
 /* TOOLBAR STYLE */
 
 .toolbar {
-    background-color: #282828;
+    background-color: var(--aside-bg);
     height: 86px;
     width: 100%;
     flex-shrink: 0;
