@@ -1,5 +1,6 @@
 :root {
     --header-width: 230px;
+    --header-small: 50px;
     --header-bg: #000000;
     --mainview-bg: #131821;
     --aside-bg: #282828;
@@ -77,6 +78,14 @@ body {
     border: 2px solid orange;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 551px) {
+    .sidebar {
+        width: var(--header-small);
+    }
+}
+
 /* SIDEBAR LOGO */
 
 .logo {
@@ -143,16 +152,16 @@ body {
     }
 }
 
+/* PLAYLIST */
+
+
+
+/* DOWNLOAD */
 
 .download {
     margin-top: auto;
 }
 
-@media screen and (max-width: 551px) {
-    .sidebar {
-        width: 50px;
-    }
-}
 
 /* MAIN-VIEW STYLE */
 
