@@ -133,7 +133,8 @@ body {
     font-size: 14px;
 }
 
-.menu__items > p:not(.home) {
+
+.menu__items > a:not(.home) {
     color: var(--gray);
 }
 
@@ -142,8 +143,12 @@ body {
     filter: invert(0.5);
 }
 
+.menu__items.home {
+    background-image: url(../img/home.svg);
+}
+
 @media screen and (max-width: 551px) {
-    .menu__items > p {
+    .menu__items > a {
         display: none;
     }
 
