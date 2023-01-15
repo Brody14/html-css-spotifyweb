@@ -375,7 +375,6 @@ body {
 .player__progress-bar {
     font-size: 10px;
     gap: 20px;
-    position: relative;
 }
 
 .bar {
@@ -389,7 +388,6 @@ body {
 .playing {
     background-color: #c1c1c1;
     width: 20%;
-    position: absolute;
 }
 
 .progress-bar.playing {
@@ -406,17 +404,11 @@ body {
     gap: 16px;
 }
 
-.volume_options {
-    position: relative;
+.options__volume {
     display: contents;
 }
 
-.volume-bar {
-    flex-grow: 1;
-    
-}
 
 .volume-bar.playing {
-    width: 30px;
-    right: 109px;
+    width: 30%;
 }
