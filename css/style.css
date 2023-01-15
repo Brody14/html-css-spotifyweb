@@ -153,13 +153,21 @@ body {
 }
 
 @media screen and (max-width: 551px) {
+    
+    .menu__items {
+        padding: 10px 14px 0;
+    }
+    
     .menu__items > a {
         display: none;
     }
 
-    .menu {
-        padding: 10px 14px 0;
+    .menu.row .menu__items:first-child {
+        border-left: none;
+        padding-left: 14px;
     }
+    
+
 }
 
 /* PLAYLIST */
