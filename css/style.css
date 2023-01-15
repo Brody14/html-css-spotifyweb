@@ -289,8 +289,8 @@ body {
     width: 100%;
     flex-shrink: 0;
     display: flex;
-    padding: 10px 10px 20px;
 }
+
 
 /* SONG PLAYED */
 
@@ -299,9 +299,10 @@ body {
     width: var(--header-width);
 }
 
-.song-played.row {
-    gap: 40px;
+.song-played {
+    padding-left: 10px;
 }
+
 
 .thumb__album-cover {
     width: 43px;
@@ -320,7 +321,6 @@ body {
 
 .song-played__options {
     color: var(--gray);
-    flex-shrink: 0;
 }
 
 .song-played__options > .like {
@@ -332,12 +332,12 @@ body {
 @media screen and (max-width: 877px) {
 
     .song-played__options {
-        flex-shrink: 1;
+        margin-right: 10px;
     }
-
 }
 
 @media screen and (max-width: 638px) {
+
 
     .thumb__album-cover {
         width: 40px;
@@ -347,8 +347,16 @@ body {
 
 @media screen and (max-width: 551px) {
 
+    .song-played__options {
+        margin-right: 0;
+    }
+
     .thumb__album-cover {
         width: 30px;
+    }
+
+    .song-played__options > .like {
+        margin-right: 0;
     }
     
 }
@@ -357,6 +365,7 @@ body {
 
 .toolbar__player {
     flex-basis: 40%;
+    padding: 10px 0px 20px;
 }
 
 .toolbar__player .row {
@@ -383,21 +392,19 @@ body {
     border-radius: 999px;
     width: 100%
 }
-
     
 .playing {
     background-color: #c1c1c1;
     width: 20%;
 }
 
-.progress-bar.playing {
-    left: 36px;
-}
 
 /* OPTION */
 
 .toolbar__options {
     flex-shrink: 0;
+    padding-right: 10px;
+    padding-left: 15px;
 }
 
 .toolbar__options .row {
@@ -407,7 +414,6 @@ body {
 .options__volume {
     display: contents;
 }
-
 
 .volume-bar.playing {
     width: 30%;
