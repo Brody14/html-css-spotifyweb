@@ -96,7 +96,7 @@ body {
 
 .logo-lg {
     width: 120px;
-} 
+}
 
 .logo-small {
     display: none;
@@ -156,11 +156,11 @@ body {
 }
 
 @media screen and (max-width: 551px) {
-    
+
     .menu__items {
         padding: 10px 14px 0;
     }
-    
+
     .menu__items > a {
         display: none;
     }
@@ -169,7 +169,7 @@ body {
         border-left: none;
         padding-left: 14px;
     }
-    
+
 
 }
 
@@ -289,9 +289,6 @@ body {
     height: calc(100vh - var(--aside-height));
 }
 
-.main-view > * {
-    border: 2px solid orange;
-}
 
 /* UPGRADE */
 
@@ -300,6 +297,7 @@ body {
     height: 90px;
     width: calc(100% - var(--header-width));
     position: fixed;
+    z-index:  1;
     font-size: 12px;
 }
 
@@ -330,7 +328,7 @@ body {
 
     .upgrade {
         width: calc(100% - var(--header-small));
-        
+
     }
 }
 
@@ -367,31 +365,35 @@ body {
 
 .section-title {
     font-size: 20px;
-    padding-top: 14px;
+    padding-top: 10px;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -7px;
+    margin: 0 -14px;
     padding: 25px 0;
 }
 
 .card {
     flex-basis: calc(100% / 6);
-    padding: 0 7px;
+    padding: 0 14px;
 }
 
 .card__description {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 17px;
+    margin: 17px 0 10px;
     align-items: center;
 }
 
 .description__title {
-    font-size: 14px;
+    font-size: 13px;
+}
+
+.description__title,
+.description__subtitle {
     text-align: center;
 }
 
@@ -415,10 +417,18 @@ body {
 
 /* CREATO PER */
 
-.created-for .section-title {
+.created-for .section-title,
+.popular-artists .section-title {
     margin-bottom: 5px;
 }
 
+/* ARTISTI POPOLARI */
+
+.popular-artists .card__img img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
 
 
 /* TOOLBAR STYLE */
@@ -483,7 +493,7 @@ body {
     .thumb__album-cover {
         width: 40px;
     }
-    
+
 }
 
 @media screen and (max-width: 551px) {
@@ -499,7 +509,7 @@ body {
     .song-played__options > .like {
         margin-right: 0;
     }
-    
+
 }
 
 /* PLAYER */
@@ -533,7 +543,7 @@ body {
     border-radius: 999px;
     width: 100%
 }
-    
+
 .playing {
     background-color: #c1c1c1;
     width: 20%;
