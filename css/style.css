@@ -173,7 +173,7 @@ body {
 /* HOVER */
 
 .menu__items:hover,
-.menu__items > .home:hover,
+.menu__items:hover > .home,
 .download:hover {
     filter: invert(0);
 }
