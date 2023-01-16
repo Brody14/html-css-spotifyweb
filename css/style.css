@@ -374,6 +374,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -7px;
+    padding: 10px 0;
 }
 
 .card {
@@ -391,6 +392,7 @@ body {
 
 .description__title {
     font-size: 14px;
+    text-align: center;
 }
 
 .description__subtitle {
