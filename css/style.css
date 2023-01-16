@@ -363,6 +363,16 @@ body {
     margin: 4px 17px 0;
 }
 
+.nav__items a {
+    transition: color .1s;
+}
+
+/* HOVER */
+
+.nav__items a:hover {
+    color: white;
+}
+
 /* RECENTLY PLAYED */
 
 .section {
