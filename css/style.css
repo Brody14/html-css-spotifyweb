@@ -473,7 +473,6 @@ body {
     background-color: var(--aside-bg);
     height: var(--aside-height);
     width: 100%;
-    flex-shrink: 0;
     display: flex;
     overflow: hidden;
 }
@@ -481,19 +480,30 @@ body {
 
 /* SONG PLAYED */
 
-.song-played,
-.toolbar__options {
-    width: var(--header-width);
-}
+.song-played.row,
+.toolbar__options.row {
+    flex-basis: var(--header-width);
+} 
 
 .song-played {
+    gap: 4px;
+}
+
+.song-played__thumb {
     padding-left: 10px;
+    gap:12px;
 }
 
 
 .thumb__album-cover {
-    width: 43px;
-    margin-right: 12px;
+    width: 42px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.thumb__album-cover img {
+    width: 100%;
 }
 
 
@@ -508,45 +518,10 @@ body {
 
 .song-played__options {
     color: var(--gray);
+    flex-wrap: wrap;
+    gap: 4px 10px;
 }
 
-.song-played__options > .like {
-    margin-right: 12px;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 877px) {
-
-    .song-played__options {
-        margin-right: 10px;
-    }
-}
-
-@media screen and (max-width: 638px) {
-
-
-    .thumb__album-cover {
-        width: 40px;
-    }
-
-}
-
-@media screen and (max-width: 551px) {
-
-    .song-played__options {
-        margin-right: 0;
-    }
-
-    .thumb__album-cover {
-        width: 30px;
-    }
-
-    .song-played__options > .like {
-        margin-right: 0;
-    }
-
-}
 
 /* PLAYER */
 
