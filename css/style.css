@@ -413,6 +413,22 @@ body {
 .card {
     flex-basis: calc(100% / 6);
     padding: 0 14px;
+    position: relative;
+    
+}
+
+.recently-played > .card__img {
+    opacity: 1;   
+}
+
+.img__hover {
+    opacity: 0;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .card__description {
@@ -448,6 +464,16 @@ body {
     .card {
         flex-basis: calc(100% / 2);
     }
+}
+
+/* HOVER */
+
+.recently-played .card:hover > .card__img {
+   opacity: 0.5;
+}
+
+.card:hover > .img__hover {
+    opacity: 1;
 }
 
 /* CREATO PER */
