@@ -361,20 +361,20 @@ body {
 
 /* RECENTLY PLAYED */
 
-.recently-played {
+.section {
     padding: 0 20px;
 }
 
 .section-title {
     font-size: 20px;
-    padding: 14px 0;
+    padding-top: 14px;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -7px;
-    padding: 10px 0;
+    padding: 25px 0;
 }
 
 .card {
@@ -386,7 +386,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 17px 0;
+    margin-top: 17px;
     align-items: center;
 }
 
@@ -395,7 +395,8 @@ body {
     text-align: center;
 }
 
-.description__subtitle {
+.description__subtitle,
+.section-subtitle {
     font-size: 10px;
     filter: invert(0.5);
 }
@@ -410,6 +411,12 @@ body {
     .card {
         flex-basis: calc(100% / 2);
     }
+}
+
+/* CREATO PER */
+
+.created-for .section-title {
+    margin-bottom: 5px;
 }
 
 
