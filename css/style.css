@@ -332,7 +332,6 @@ body {
     border-radius: 999px;
     width: 220px;
     text-align: center;
-    transition: trasform .2s;
 }
 
 .upgrade__button a {
@@ -356,7 +355,7 @@ body {
 /* HOVER */
 
 .upgrade__button:hover {
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 /* NAVBAR */
