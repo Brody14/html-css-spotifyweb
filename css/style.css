@@ -122,7 +122,6 @@ body {
 
 .menu.row {
     flex-direction: column;
-    color: white;
 }
 
 .menu__items {
@@ -130,18 +129,19 @@ body {
     line-height: 20px;
 }
 
-.menu__items:first-child {
-    border-left: 4px solid var(--lime);
-    padding-left: 18px;
-}
-
-.menu-button:not(.home),
+.menu__items,
+.menu__items > img.home,
 .download {
     filter: invert(0.5);   
 }
 
+.menu__items:first-child {
+    border-left: 4px solid var(--lime);
+    padding-left: 18px;
+    filter: invert(0);
+}
+
 .menu__items,
-.menu-button,
 .download,
 .profile {
     display: flex;
@@ -149,14 +149,10 @@ body {
 }
 
 
-.menu-button > img {
+.menu__items > img {
     width: 20px;
-    filter: invert(0.5);
 }
 
-.menu__items.home {
-    background-image: url(../img/home.svg);
-}
 
 @media screen and (max-width: 551px) {
 
@@ -176,18 +172,18 @@ body {
 
 /* HOVER */
 
-.menu-button:hover,
-.menu-button img:hover {
+.menu__items:hover,
+.menu__items > .home:hover,
+.download:hover {
     filter: invert(0);
 }
-
-
 
 /* PLAYLIST */
 
 .playlist {
     padding: 10px 21px 0;
 }
+
 
 .playlist__title {
     text-transform: uppercase;
@@ -196,20 +192,19 @@ body {
 
 .button {
     font-size: 13px;
-}
-
-.wrapper_items,
-.button {
     color: var(--gray);
 }
 
+.wrapper_items{
+    filter: invert(0.5);
+}
 
-.button > .plus {
+.plus {
     color: var(--header-bg);
     background-color: var(--button-gray);
-    padding: 9px 7px;
+    padding: 9px 5px;
     margin-right: 5px;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 11px;
 }
 
@@ -227,6 +222,21 @@ body {
         display: none;
     }
 }
+
+/* HOVER */
+
+.wrapper_items:hover {
+    filter: invert(0);
+}
+
+.button:hover {
+    color: white;
+}
+
+.plus:hover {
+    background-color: white;
+}
+
 
 /* DOWNLOAD */
 
