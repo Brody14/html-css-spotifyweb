@@ -569,15 +569,15 @@ body {
     background-color: #5a5a5a;
     border-radius: 999px;
     flex-grow: 1;
+    position: relative;
 }
 
 .playing {
     background-color: #c1c1c1;
     width: 20%;
-    position: relative;
 }
 
-.circle {
+.progress-bar .circle {
     display: none;
     position: absolute;
     top: -1px;
@@ -590,11 +590,13 @@ body {
     transform: scale(1.1);
 }
 
-.playing:hover > .circle {
+.playing:hover + .circle,
+.bar:hover > .circle {
     display: block;
 }
 
-.playing:hover {
+.playing:hover,
+.bar:hover > .playing {
     background-color: var(--lime);
 }
 
@@ -614,9 +616,10 @@ body {
 }
 
 .options__volume .circle {
+    display: none;
     font-size: 10px;
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 17px;
 }
 
