@@ -526,7 +526,7 @@ body {
 /* PLAYER */
 
 .toolbar__player {
-    flex-basis: 40%;
+    flex-basis: 35%;
     padding: 10px 0px 20px;
 }
 
@@ -535,12 +535,12 @@ body {
 }
 
 .player__buttons {
-    margin-bottom: 10px;
+    padding: 4px 8px;
 }
 
 .fa-circle-play {
     font-size: 30px;
-    margin: 0 10px;
+    padding: 4px 12px;
 }
 
 .player__progress-bar {
@@ -552,7 +552,7 @@ body {
     height: 5px;
     background-color: #5a5a5a;
     border-radius: 999px;
-    width: 100%
+    flex-grow: 1;
 }
 
 .playing {
