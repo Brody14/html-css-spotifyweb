@@ -481,7 +481,7 @@ body {
 /* SONG PLAYED */
 
 .song-played.row,
-.toolbar__options.row {
+.toolbar__options {
     flex-basis: var(--header-width);
 } 
 
@@ -562,21 +562,16 @@ body {
 
 
 /* OPTION */
-
 .toolbar__options {
-    flex-shrink: 0;
-    padding-right: 10px;
-    padding-left: 15px;
+    padding-right: 11px;
 }
 
-.toolbar__options .row {
+.toolbar__options .row,
+.options__volume .row {
     gap: 16px;
 }
 
 .options__volume {
-    display: contents;
+    flex-grow: 1;
 }
 
-.volume-bar.playing {
-    width: 30%;
-}
