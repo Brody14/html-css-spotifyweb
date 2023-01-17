@@ -3,7 +3,7 @@
     --header-small: 50px;
     --header-bg: #000000;
     --mainview-bg: #131821;
-    --upgrade-bg: #080b12;
+    --upgrade-bg: rgba(8, 11, 18, 0.7);
     --aside-height: 86px;
     --aside-bg: #282828;
     --gray: #666666;
@@ -314,10 +314,9 @@ body {
 
 .upgrade {
     background-color: var(--upgrade-bg);
-    height: 90px;
-    width: calc(100% - var(--header-width));
-    position: fixed;
-    z-index:  1;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     font-size: 12px;
 }
 
@@ -342,16 +341,6 @@ body {
     text-transform: uppercase;
 }
 
-/* RESPONSIVE */
-
-@media screen and (max-width: 551px) {
-
-    .upgrade {
-        width: calc(100% - var(--header-small));
-
-    }
-}
-
 /* HOVER */
 
 .upgrade__button:hover {
@@ -361,7 +350,7 @@ body {
 /* NAVBAR */
 
 .main-nav {
-    padding: 110px 40px 20px;
+    padding: 20px 40px 20px;
     font-size: 12px;
     color: var(--gray);
     text-transform: uppercase;
