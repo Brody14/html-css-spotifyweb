@@ -195,9 +195,6 @@ body {
     color: var(--gray);
 }
 
-.wrapper_items{
-    filter: invert(0.5);
-}
 
 .plus {
     color: var(--header-bg);
@@ -213,6 +210,9 @@ body {
     flex-direction: column;
     gap: 12px;
     padding: 10px 21px;
+}
+.wrapper_items{
+    filter: invert(0.5);
 }
 
 @media screen and (max-width: 551px) {
