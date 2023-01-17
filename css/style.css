@@ -395,27 +395,26 @@ body {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -14px;
+    margin: 0 -7px;
     padding: 25px 0;
 }
 
 .card {
     flex-basis: calc(100% / 6);
-    padding: 0 14px;
-    position: relative;
-    
+    padding: 0 7px; 
 }
 
-.recently-played > .card__img {
-    opacity: 1;   
+.card__img {
+    opacity: 1;
+    position: relative;   
 }
 
-.img__hover {
-    opacity: 0;
+i.img__hover {
+    display: none;
     font-size: 50px;
     color: white;
     position: absolute;
-    top: 29%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
@@ -457,12 +456,12 @@ body {
 
 /* HOVER */
 
-.recently-played .card:hover > .card__img {
+.card:hover > .card__img img {
    opacity: 0.5;
 }
 
-.card:hover > .img__hover {
-    opacity: 1;
+.card:hover > .card__img > .img__hover {
+    display: block;
 }
 
 /* CREATO PER */
