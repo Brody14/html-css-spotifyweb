@@ -456,7 +456,7 @@ i.img__hover {
 
 /* HOVER */
 
-.card:hover > .card__img img {
+.recently-played > .card:hover > .card__img img {
    opacity: 0.5;
 }
 
