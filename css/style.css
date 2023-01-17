@@ -100,12 +100,13 @@ body {
 
 .logo-small {
     display: none;
+    width: 28px;
 }
 
 @media screen and (max-width: 551px) {
 
     .logo {
-        padding: 4px 10px;
+        padding: 4px 0;
     }
 
     .logo-lg {
@@ -114,15 +115,13 @@ body {
 
     .logo-small {
         display: block;
+        margin: 0 auto;
 
     }
 }
 
 /* SIDEBAR MENU */
 
-.menu.row {
-    flex-direction: column;
-}
 
 .menu__items {
     padding: 5px 22px;
@@ -156,6 +155,7 @@ body {
 
 @media screen and (max-width: 551px) {
 
+
     .menu__items {
         padding: 10px 14px 0;
     }
@@ -164,7 +164,7 @@ body {
         display: none;
     }
 
-    .menu.row .menu__items:first-child {
+    .menu .menu__items:first-child {
         border-left: none;
         padding-left: 14px;
     }
@@ -202,7 +202,7 @@ body {
 .plus {
     color: var(--header-bg);
     background-color: var(--button-gray);
-    padding: 9px 5px;
+    padding: 5px 5px;
     margin-right: 5px;
     font-size: 19px;
     line-height: 11px;
@@ -257,7 +257,7 @@ body {
 @media screen and (max-width: 551px) {
 
     .download {
-        padding: 0 20px 10px 17px;
+        padding: 10px 20px;
     }
 
     .download > a {
@@ -290,7 +290,7 @@ body {
 
     .profile {
         border: none;
-        padding: 12px 12px 10px;
+        padding: 12px 14px 10px;
         margin: 0;
 
     }
