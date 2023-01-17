@@ -572,6 +572,11 @@ i.img__hover {
     padding: 4px 12px;
 }
 
+.time::before {
+    content: '0:00';
+}
+
+
 .player__progress-bar {
     font-size: 10px;
     gap: 20px;
@@ -590,7 +595,7 @@ i.img__hover {
     width: 20%;
 }
 
-.progress-bar .circle {
+.circle {
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -604,14 +609,24 @@ i.img__hover {
     transform: scale(1.1);
 }
 
-.playing:hover + .circle,
-.bar:hover > .circle {
+.bar:hover > .playing {
     opacity: 1;
+    width: 100%;
+    animation: progress 5s;
+    animation-iteration-count: infinite;
+    background-color: var(--lime);
 }
 
-.playing:hover,
-.bar:hover > .playing {
-    background-color: var(--lime);
+.bar:hover > .circle {
+    opacity: 1;
+    animation: circle 5s;
+    animation-iteration-count: infinite;
+}
+
+.player__progress-bar:hover > .time::before {
+    animation: timechange 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
 }
 
 
@@ -632,10 +647,37 @@ i.img__hover {
 .options__volume .circle {
     opacity: 0;
     font-size: 10px;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-   
+}
+
+/* ANIMATION */
+
+@keyframes progress {
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes circle {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: 100%
+    }
+}
+
+@keyframes timechange {
+    0% {
+        content: '0:00';
+    }
+
+    100% {
+        content: '4:35';
+    }
 }
 
