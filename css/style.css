@@ -184,10 +184,9 @@ body {
         display: none;
     }
 
-    .menu .menu__items:first-child {
-        border-left: none;
-        padding-left: 14px;
-    }
+    .menu__items.active::before {
+        display: none;
+    }    
 }
 
 /* HOVER */
