@@ -175,9 +175,14 @@ body {
 
 @media screen and (max-width: 551px) {
 
+    .menu {
+        padding-top: 10px;
+    }
+
 
     .menu__items {
-        padding: 10px 14px 0;
+        padding: 0 14px;
+        margin-bottom: 10px;
     }
 
     .menu__items > a {
@@ -186,7 +191,11 @@ body {
 
     .menu__items.active::before {
         display: none;
-    }    
+    }  
+    
+    .menu__items.active:active::before {
+        display: block;
+    }
 }
 
 /* HOVER */
